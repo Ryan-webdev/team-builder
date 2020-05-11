@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Form from './components/Form';
+import Forms from './components/Form';
 import Members from './components/Members';
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     {
       id: 1,
       name: "Ryan Schueck",
-      title: "Front-End Engineer"
-      
+      title: "Front-End Engineer",
+      email: "ryschueck@gmail.com"
     },
   ]);
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>Engineering teammates</h1>
-      <Form onSubmit={submit}/>
+      <Forms onSubmit={submit}/>
       <Members engineer={engineer}/>
     </div>
   );
